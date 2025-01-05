@@ -57,7 +57,7 @@ body{
 }
 
 .search1 input{
-    width: 500px;
+    width: 600px;
     height: 35px;
     font-size: 18px;
     padding: 10px;
@@ -548,3 +548,25 @@ body{
     background-color: honeydew;
     color: black;
 }
+
+/* STYLING NEW EVENT STARTS HERE */
+.newevent{
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+   
+    align-content: center;
+    text-align: center;
+    
+}
+
+.newevent form{
+    line-height: 50px;
+    
+}
+
+.newevent input{
+    width: 300px;
+    height: 30px;
+}
+
