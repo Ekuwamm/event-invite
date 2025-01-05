@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title  %}
+            CFY EVENTS INVITE
+        {% endblock  %}
+    </title>
+
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <script src="{% static "js/main.js" %}"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+        <nav class="header">
+           
+            <p><a href="/">CFY <span>Event <span>Invite</span></span></a></p>
+            <div class="search1">
+            <input type="search" name="" id="" placeholder="Search Events"><label for="">Search Events</label>
+            </div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="{% url "events:upcoming" %}">Upcoming Events</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+           
+        </nav>
+
+        {% block content %}
+        
+        {% endblock  %}
+
+        {% include "footer.html" %}
+</body>
+</html>

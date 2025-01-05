@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}
+    Events
+{% endblock  %}
+
+{% block content %}
+
+    <div class="myevents">
+        {% for anevent in myevents %}
+        <div class="myevents1">
+
+                <h3>
+                    <a href="{% url "events:my-event" slug=anevent.slug %}">
+                    {{anevent.title}}
+                </a>
+                </h3>
+                <img src="{{anevent.banner.url}}" alt="" srcset="">
+                <p>{{anevent.body1}}</p>
+                <p>{{anevent.date}}</p>
+                
+           
+        </div>
+        {% endfor %}
+       
+
+        
+    </div>
+{% endblock  %}
