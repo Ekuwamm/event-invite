@@ -1,0 +1,38 @@
+
+{% extends "layout.html" %}
+
+{% block title  %}
+    Sign Up New users
+{% endblock  %}
+
+{% block content %}
+    <section class="signup">
+
+        <form action="/users/register/" method="post">
+            {% csrf_token %}
+            {{form}}                                                                    
+            <button type="submit">Submit</button>
+        </form>
+
+    </section>
+
+{% endblock  %}
+{% comment %} {% extends "layout.html" %}
+
+{% block title  %}
+    Sign Up New users
+{% endblock  %}
+
+{% block content %}
+    <section class="signup">
+
+        <form action="/users/sign_up/" method="post">
+            {% csrf_token %}
+            {{form}}                                                                    
+            <div class="btn"><button type="submit">Submit</button></div>
+        </form>
+
+    </section>
+
+{% endblock  %} {% endcomment %}
+

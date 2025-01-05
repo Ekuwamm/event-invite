@@ -57,7 +57,7 @@ body{
 }
 
 .search1 input{
-    width: 700px;
+    width: 500px;
     height: 35px;
     font-size: 18px;
     padding: 10px;
@@ -96,6 +96,30 @@ body{
     border-bottom: 5px solid red;
     background-color: honeydew;
 }
+
+.header form{
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color:gainsboro;
+   
+}
+
+.header form button{
+    width: 100px;
+    background-color:gainsboro;
+    border: none;
+    font-size: 18px;
+    color: rgb(8, 8, 8);
+}
+
+.header form:hover{
+    border-bottom: 5px solid red;
+    background-color: honeydew;
+}
+
 
 
 /* DESIGN SLIDE STARTS HERE */
@@ -460,4 +484,67 @@ body{
 
 .myeventpage1 p{
     font-size: 20px;
+}
+
+
+/* STYLING SIGN UP FORM START HERE */
+
+.signup{
+    margin-top: 60px;
+    height: 800px;
+    background-color: rgb(170, 236, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.signup form{
+    margin-left: 100px;
+    padding: 100px;
+    background-color: gainsboro;
+    width: 800px;
+    height: auto;
+    margin-right: 100px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
+    margin-bottom: 50px;
+    line-height: 30px;
+    
+}
+
+.signup input{
+    width: 300px;
+    height: 30px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.signup button{
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    align-items: center;
+    width:  200px;
+    height: 40px;
+    margin-top: 30px;
+   margin-left: 200px;
+}
+
+.signup button:hover{
+    background-color: chocolate;
+    color: wheat;
+}
+
+.signup button:focus{
+    background-color: honeydew;
+    color: black;
 }

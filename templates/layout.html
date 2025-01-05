@@ -25,7 +25,17 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="{% url "events:upcoming" %}">Upcoming Events</a></li>
-                <li><a href="{% url "users:signup" %}">Sign Up</a></li>
+                {% if user.is_authenticated %}
+                <li><a href="{% url "events:new-event" %}">Create Events</a></li>
+                <li><form action="{% url "users:logout" %}" method="post">
+                    {% csrf_token %}
+                    <button type="submit">Logout</button>
+                </form></li>
+                {% else %}
+                <li><a href="{% url "users:register" %}">Sign Up</a></li>
+                <li><a href="{% url "users:login" %}">Login</a></li>
+                
+                {% endif %}
                 <li><a href="/about">About</a></li>
             </ul>
            
