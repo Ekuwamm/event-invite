@@ -107,20 +107,28 @@ body{
    
 }
 
-.header form button{
+
+.header button{
     width: 100px;
     background-color:gainsboro;
     border: none;
     font-size: 18px;
     color: rgb(8, 8, 8);
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    color: black;
 }
 
-.header form:hover{
+
+
+.header button:hover{
     border-bottom: 5px solid red;
     background-color: honeydew;
 }
-
-
 
 /* DESIGN SLIDE STARTS HERE */
 
