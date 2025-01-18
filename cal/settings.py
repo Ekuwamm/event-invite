@@ -30,7 +30,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['event-invite-production.up.railway.app', 'https://event-invite-production.up.railway.app']
 
-CSRF_TRUSTED_ORIGINS = ['event-invite-production.up.railway.app', 'https://event-invite-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://event-invite-production.up.railway.app']
 # Application definition
 
 INSTALLED_APPS = [
