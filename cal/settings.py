@@ -28,9 +28,9 @@ SECRET_KEY = 'django-insecure-=e&0g(gbe-dp*c-_ojjc#&!9d_t_*aa5&-7(2e-y@-e)ah*c=a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['event-invite-production.up.railway.app', 'https://event-invite-production.up.railway.app']
 
-
+CSRF_TRUSTED_ORIGINS = ['event-invite-production.up.railway.app', 'https://event-invite-production.up.railway.app']
 # Application definition
 
 INSTALLED_APPS = [
