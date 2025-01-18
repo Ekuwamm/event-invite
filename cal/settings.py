@@ -26,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-=e&0g(gbe-dp*c-_ojjc#&!9d_t_*aa5&-7(2e-y@-e)ah*c=a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app','127.0.0.1','.now.sh']
 
 
 # Application definition
@@ -83,11 +83,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',  
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'jXkYdotbUOmXRAPIOCXJwuhcCiXbcKqU',
-        'HOST': 'postgres.railway.internal',
-        'PORT': '5432',
+        'PASSWORD': 'nTmCyNgFkQOLQAFtqBQfKpJzqYuiaoye',
+        'HOST': 'autorack.proxy.rlwy.net',
+        'PORT': '34391',
     }
-    # Uncomment the following if you want to use SQLite instead
+    
     # 'default': {
     #     'ENGINE': 'django.db.backends.sqlite3',
     #     'NAME': BASE_DIR / 'db.sqlite3',
@@ -135,6 +135,9 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build','static')
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

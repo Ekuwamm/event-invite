@@ -7,12 +7,35 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* WIDE SCREEN DISPLAY */
 body{
     font-family: "Nunito", serif;
     min-height: 100vh;
 }
 
+/* MEDIUM DEVICES DISPLAY */
+@media screen and (min-width:600px) and (max-width:992px) {
+    body{
+        font-family: "Nunito", serif;
+        min-height: 100vh;
+    }
+}
+
+/* SMALL MEDIA AND THEIR ORIENATATIONS */
+
+@media screen and (min-width:600px) and (orientation:landscape) {
+    body{
+        font-family: "Nunito", serif;
+        min-height: 100vh;
+    }
+}
+
+@media screen and (min-width:600px) and (orientation:portrait){
+    body{
+        font-family: "Nunito", serif;
+        min-height: 100vh;
+    }
+}
 .header{
     position: fixed;
     width: 100%;
@@ -26,13 +49,86 @@ body{
     background-color:gainsboro;
    
 }
+/* MEDIUM DEVICES DISPLAY */
+@media screen and (min-width:600px) and (max-width:992px){
+    .header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:gainsboro;
+       
+    }
+}
 
+/* SMALL MEDIA AND THEIR ORIENATATIONS */
+
+@media screen and (max-width:600px) and (orientation:landscape) {
+    .header{
+        width: 100%;
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:gainsboro;
+       
+    }
+}
+
+@media screen and (max-width:600px) and (orientation:portrait){
+    .header{
+        width: 100%;
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color:gainsboro;
+       
+    }
+}
 .header p{
     margin-right: 20px;
     font-weight: bolder;
 
 }
 
+/* MEDIUM DEVICES DISPLAY */
+@media screen and (min-width:600px) and (max-width:992px){
+    .header p{
+        
+        margin-right: 20px;
+        font-weight: bolder;
+    
+    }
+}
+
+/* SMALL MEDIA AND THEIR ORIENATATIONS */
+
+@media screen and (max-width:600px) and (orientation:landscape){
+    .header p{
+        display: flex;
+        margin-right: 20px;
+        font-weight: bolder;
+    
+    }
+    
+}
+
+@media screen and (max-width:600px) and (orientation:portrait){
+    .header p{
+        display: flex;
+        margin-right: 20px;
+        font-weight: bolder;
+    
+    }
+}
 .header p a{
     font-size: 30px;
     text-decoration: none;
@@ -130,6 +226,8 @@ body{
     background-color: honeydew;
 }
 
+
+
 /* DESIGN SLIDE STARTS HERE */
 
 .hero1{
@@ -144,6 +242,19 @@ body{
     
 }
 
+@media screen and (max-width:600px) and (orientation:portrait){
+    .hero1{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        width: 100%;
+        background-color:gainsboro ;
+        padding-top: 50px;
+       
+    }
+}
 .hero2{
     margin-left: 100px;
     background-color:gainsboro ;
@@ -195,7 +306,20 @@ body{
     margin-top: 50px;
     gap: 20px;
 }
-
+@media screen and (max-width:600px) and (orientation:portrait){
+    .events1{
+        margin-left: 10px;
+        margin-right: 10px;
+        place-content: center;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        place-content: center;
+        grid-template-columns:1fr;
+        margin-top: 50px;
+        gap: 20px;
+    }
+}
 .events2{
     height: 100px;
     width: 100px;
